@@ -4,184 +4,192 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>checkout</title>
 </head>
 <body>
-    <style>
-        .checkout{
-            background-color: rgb(238, 240, 239);
-        }
-        .check1{
-            margin-left: 45%;
-        }
-        .check2{
-            margin-top: 5%;
-            margin-left: 5%;
-        }
-        .check3{
-            margin-top: 5%;
-            margin-left: 5%;
-        }
-        .btn1{
-            background-color: rgb(8, 189, 113);
-            color: white;
-        }
-        .check4{
-            margin-top: 5%;
-            margin-left: 45%;
-        }
-        .color{
-            background-color: rgb(191, 236, 236);
-            padding: 2px;
-            box-shadow: 0 0 13px black;
-            margin-left: 20%;
-            margin-right: 20%;
-            margin-top: 5%;
-        }
-        .class0{
-        background-color: rgb(51, 163, 167);
-        padding: 2px;
-        box-shadow: 0 0 13px black;
-        color: black;
-        margin-top: 5%;
+  <style>
+    .span{
+      color: #6c757d;
     }
-    .mainclass0{
-        margin-left: 36%;
-        margin-right: 40%;
+    /* p{
+      margin-left: 0%;
+    } */
+    input{
+      color: #6c757d;
     }
-    .cl1 ul{
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        flex-direction: row;
-    }.cl2 ul{
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        flex-direction: row;
+    .checkout{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
     }
-    .cl3 ul{
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        flex-direction: row;
+    .check{
+      width: 50%;
     }
-    .cl4 ul{
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        flex-direction: row;
+    .check2{
+      border: 2px solid rgb(0, 0, 0);
+      /* border-radius: 50px; */
     }
-    .cl5 ul{
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        flex-direction: row;
+    .check3{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      border-left-style: solid;
+      border-right-style: solid;
+      /* border-bottom-style: solid; */
     }
-    .cl6{
-        display: flex;
-        justify-content: center;
+    .checkoutt{
+      border-left-style: solid;
+      border-right-style: solid;
+      /* border-bottom-style: solid; */
     }
-    .btn5{
-        background-color: rgb(21, 185, 158);
-        color: black;
-        margin-right: 70%;
+    .checkk{
+      margin-left: 5%;
     }
-    .cl7{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin-left: 40%;
+    .checkkk{
+      margin-right: 10%;
+    }
+    .check1{
+      width: 30%;
+    }
+    .checkout2{
+      border-left-style: solid;
+      border-right-style: solid;
+      border-bottom-style: solid;
     }
     </style>
-<div class="checkout">
-    <div class="check1">
-       <h1>Checkout</h1><br>
-       <a href="checkout.html">Home</a>/checkout
-    </div>
-</div>
-    <div class="check2">
-        <p>Have a coupon?<a href="checkout.html">Click here to enter your code</a></p>
-    </div>
-    <div class="check3">
-        <p>If you have a coupon code, please apply it below.</p>
-        <input type="text" placeholder="coupon code" name="coupon">
-        <button class="btn1">Apply Coupon</button>
-    </div>
-</div>
-<div class="color">
-<div class="check4">
-    <h2>Billing details</h2>
-    First name:<br><br>
-    <input type="text" placeholder="first name" name="name"><br><br>
-    Last name:<br><br>
-    <input type="text" placeholder="last name" name="name"><br><br>
-    Company name (optional):<br><br>
-    <input type="text" placeholder="company name" name="name"><br><br>
-    Country:<br><br>
-    <input type="text" placeholder="country name" name="name"><br><br>
-    Apartment, suite, unit etc. (optional) (optional):<br><br>
-    <input type="text" placeholder=" Apartment, suite, unit etc. (optional)" name="name"><br><br>
-    Town / City:<br><br>
-    <input type="text" placeholder="city or town" name="name"><br><br>
-    District:<br><br>
-    <input type="text" placeholder="District" name="name"><br><br>
-    Postcode / ZIP (optional):<br><br>
-    <input type="text" placeholder="Postcode/ZIP " name="name"><br><br>
-    Phone:<br><br>
-    <input type="numbers" placeholder="phone no" name="name"><br><br>
-    Email:<br><br>
-    <input type="text" placeholder="email" name="name"><br><b>
-    <h1>Additional information</h1>
-    order notes (optional)<br><br>
-    <input type="text" placeholder="Notes about your order,e.g.special notes for delivery" name="name"><br><br>
-</div>
-</div>
-<div class="class0">
-    <div class="cl6">
-    <h2>Your Order</h2>
-</div>
-    <div class="mainclass0">
-    <div class="cl1">
-        <ul>
-            <li><b>Product</b></li>
-            <li><b>Total</b></li>
-        </ul>
-    </div>
-    <div class="cl2">
-    <ul>
-        <li>Beanie with Logo  × <b>2</b></li>
-        <li>৳ 36.00</li>
-    </ul>
-   </div>
-   <div class="cl3">
-    <ul>
-        <li>Beanie  × <b>1</b></li>
-        <li>৳ 18.00</li>
-    </ul>
-   </div>
-   <div class="cl4">
-    <ul>
-        <li><b>Subtotal</b></li>
-        <li>৳ 54.00</li>
-    </ul>
-   </div>
-   <div class="cl5">
-    <ul>
-        <li><b>Total</b></li>
-        <li><b>৳ 54.00</b></li>
-    </ul>
-   </div>
-</div>
-<div class="cl7">
-<p>Cash on delivery</p>  
-Pay with cash upon delivery.<br><br>
-Your personal data will be used to process<br>
-your order, support your experience<br>
-throughout this website, and for other<br>
-purposes described in our <a href="checkout.html">privacy policy.</a><br>
-<button class="btn5">Place order</button>
-</div>
-</div>
+    <div class="checkout">
+      <div class="container check">
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Personal Information
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                <h6>Social Title:</h6>
+               <input type="radio" name="gen" value="1"><span>Mr</span> <input type="radio" name="gen" value="2"><span>Mrs</span>
+               <br><br>
+               <h6>First Name:</h6>
+               <input type="text" placeholder="" name="first name" class="col-10"><br>
+               <span class="span">Only Letters And The Dot (.) Character, Followed By A Space, Are Allowed</span>
+               <br>
+               <h6>Last Name:</h6>
+               <input type="text" placeholder="" name="last name" class="col-10"><br>
+               <span class="span">Only Letters And The Dot (.) Character, Followed By A Space, Are Allowed.</span>
+               <br>
+               <h6>Email</h6>
+               <input type="text" placeholder="" name="email" class="col-10"><br><br>
+               <input type="radio">  Customer Data Privacy<br>
+               <span class="span">The Personal Data You Provide Is Used To Answer Queries, Process Orders Or Allow Access To Specific Information. You Have The Right To Modify And Delete All The Personal Information Found In The "My Account" Page.</span>
+              <br><br>
+               <input type="radio">  Sign Up For Our Newsletter<br>
+               <span class="span">You May Unsubscribe At Any Moment. For That Purpose, Please Find Our Contact Info In The Legal Notice.</span>
+              </div>
+            </div>
+          </div>
+          <br><br><br><br>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Addresses
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+               <h6>Address:</h6>
+               <input type="text" placeholder="" name="address" class="col-10"><br><br>
+               <h6>Phone Number:</h6>
+               <input type="number" placeholder="" class="col-10" name="phone no"><br><br>
+               <h6>City:</h6>
+               <input type="text" class="col-10" name="city" placeholder=""><br><br>
+               <h6>Zip/Postal Code:</h6>
+               <input type="number" class="col-10" name="zip" placeholder=""><br><br>
+               <h6>Province:</h6>
+               <input type="text" class="col-10" placeholder="" name="Province"><br><br>
+               <h6>Country:</h6>
+               <input type="text" class="col-10" placeholder="Pakistan" name="country">
+              </div>
+            </div>
+          </div>
+          <br><br><br><br>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Shipping Method
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body">
+               <input type="radio">  Free Carrier (Delivery Next Week! - Free)<br><br>
+               <input type="radio">  Mega Express (Pick Up In-Store - $7.00 Tax Excl.)<br><br>
+                If You Would Like To Add A Comment About Your Order, Please Write It In The Field Below.<br>
+                <textarea class="form-control" rows="5" id="comment">Message</textarea>
+              </div>
+            </div>
+          </div>
+          <br><br><br><br>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+               Payment
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+              <div class="accordion-body">
+                <input type="radio">    Cash On Delivery
+                <input type="radio">  Pay By Bank Wire<br>
+                <input type="radio"><br>
+                I Agree To The <a href="#">Terms Of Service</a> And Will Adhere To Them Unconditionally.
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="container check1">
+          <div class="check2">
+            Your Order
+          </div>
+          <div class="checkoutt">
+            2 Item<br>
+            Show Details
+          </div>
+          <div class="check3">
+            <div class="checkkk">
+              Subtotal
+              <br>
+              Shipping
+              <br>
+              Total (Tax Excl.)
+              <br>
+              <h4>Total (Tax Incl.)</h4>
+              Taxes:
+            </div>
+            <div class="checkk">
+              Rs. 0
+              <br>
+              Rs. 0
+              <br>
+              Rs. 0
+              <h4>Rs. 0</h4>
+              Rs. 0
+            </div>
+          </div>
+          <div class="checkout2">
+          <input type="number" placeholder="Place code" name="code" class="col-9"><button type="button" class="col-3 btn btn-outline-primary">Add</button>
+           <br>
+          <button type="button" class="col-12 btn btn-outline-primary">Place Order</button>
+          </div>
+        </div>
+      </div>
+      
 </body>
 </html>
